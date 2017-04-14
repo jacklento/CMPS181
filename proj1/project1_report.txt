@@ -1,8 +1,9 @@
 1. Basic information
-Team Number : 
+Team Number : 18
 Student ID# of Submitter:
 Name of Submitter: 
 ID#s and Names for others on the Team
+   1563838  Jean Park
 
 
 2. Internal Record Format
