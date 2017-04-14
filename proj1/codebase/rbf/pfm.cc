@@ -23,12 +23,12 @@ PagedFileManager::~PagedFileManager()
 
 
 RC PagedFileManager::createFile(const string &fileName)
-	{
-	if(FileExists(fileName)){
-	fprintf(stderr, "jack you did it");
-	return 0;
-	}
-FILE* new_file = fopen(fileName.c_str());
+  {
+  if(FileExists(fileName)){
+  fprintf(stderr, "jack you did it");
+  return 0;
+  }
+FILE* new_file = fopen(fileName.c_str(), "w");
 return -1;
 }
 
