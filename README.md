@@ -22,3 +22,7 @@ examples:
 
 * git remote set-url origin https://myname@github.com/myname/CMPS181.git
 * git remote set-url upstream https://leadername@github.com/leadername/CMPS181.github
+
+#### Fixup/Squash multiple commits:
+
+[stackoverflow: git squash and fixup](stackoverflow.com/questions/6934752/combining-multiple-commits-before-pushing-in-git "stackoverflow")

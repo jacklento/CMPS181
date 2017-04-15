@@ -1,4 +1,5 @@
 #include "pfm.h"
+#include "test_util.h"
 
 PagedFileManager* PagedFileManager::_pf_manager = 0;
 
@@ -25,7 +26,7 @@ RC PagedFileManager::createFile(const string &fileName)
 {
    if (FileExists(fileName)){
       fprintf(stderr, "error: file already exists");
-      return -1;
+      return rc::file_exists;
    } else {
       FILE* new_file = fopen(fileName.c_str(), "w");
       if (new_file) {
@@ -35,7 +36,7 @@ RC PagedFileManager::createFile(const string &fileName)
          return -1;
       }
    } 
-   return success;
+   return rc::success;
 }
 
 
