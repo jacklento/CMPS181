@@ -23,7 +23,19 @@ PagedFileManager::~PagedFileManager()
 
 RC PagedFileManager::createFile(const string &fileName)
 {
-    return -1;
+   if (FileExists(fileName)){
+      fprintf(stderr, "error: file already exists");
+      return -1;
+   } else {
+      FILE* new_file = fopen(fileName.c_str(), "w");
+      if (new_file) {
+         fclose(new_file);
+      } else {
+         fprintf(stderr, "error: could not write to file");            
+         return -1;
+      }
+   } 
+   return success;
 }
 
 
