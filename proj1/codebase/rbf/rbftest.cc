@@ -14,16 +14,6 @@
 
 using namespace std;
 
-// Check if a file exists
-bool FileExists(string fileName)
-{
-    struct stat stFileInfo;
-
-    if (stat(fileName.c_str(), &stFileInfo) == 0)
-        return true;
-    else
-        return false;
-}
 
 // Function to prepare the data in the correct form to be inserted/read
 void prepareRecord(const int nameLength, const string &name, const int age, const float height, const int salary, void *buffer, int *recordSize)

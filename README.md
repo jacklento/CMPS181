@@ -17,6 +17,8 @@ Github Cheatsheet
 
 #### Change remote url
 * git remote set-url _remote-label_ _url_
+
 examples:
+
 * git remote set-url origin https://myname@github.com/myname/CMPS181.git
 * git remote set-url upstream https://leadername@github.com/leadername/CMPS181.github
